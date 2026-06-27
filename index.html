@@ -1,4 +1,27 @@
-function doGet(e) {
-  return HtmlService.createHtmlOutputFromFile('https://script.google.com/macros/s/AKfycbxK5fJWckMtO8bI3UL85f6kl3Swo2OA_xqykQbqfjQp9BlJFDf7I8CEP87HpgmF5NFJDQ/exec')
-         .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL); // <--- ต้องมีบรรทัดนี้
-}
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบของคุณ</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <iframe src="https://script.google.com/macros/s/AKfycbxK5fJWckMtO8bI3UL85f6kl3Swo2OA_xqykQbqfjQp9BlJFDf7I8CEP87HpgmF5NFJDQ/exec"></iframe>
+
+</body>
+</html>
